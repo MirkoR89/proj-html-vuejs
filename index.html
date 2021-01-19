@@ -14,16 +14,16 @@
   <script src="https://kit.fontawesome.com/8d58ee31c8.js" crossorigin="anonymous"></script>
   <!-- Google Fonts CDN -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div id="root" class="container" >
+  <div id="root">
     <!-- Header -->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand logo" href="#">THE KEYNOTE</a>
+      <nav class="navbar navbar-expand-lg container">
+        <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png" alt="Logo Keynote"></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul v-for='link in navBar' class="navbar-nav mx-auto">
             <li class="nav-item active">
@@ -40,8 +40,18 @@
       </nav>
 
       <!-- Hero content -->
-      <div class="hero_content">
+      <div class="jumbotron jumbotron-fluid hero_content">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+          <h2>CONFERENCE ON</h2>
+          <h1 class="pb-2">SOCIAL NETWORKS</h1>
+          <div class="date_conference py-2 mb-3">
+            <span> date /</span>
+            <span>place /</span>
+            <span>speakers</span>
+          </div>
+          <button type="button" class="btn">REGISTER ONLINE</button>
 
+        </div>
       </div>
     </header>
 

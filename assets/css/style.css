@@ -5,9 +5,6 @@
 /* Header */
 /* Navbar */
 .logo {
-  font-weight: 700;
-  font-size: 25px!important;
-  color: #272727!important;
   margin-right: 6rem!important;
 
 }
@@ -32,4 +29,27 @@ form span i {
   border: none!important;
   width: 30px!important;
   height: 20px!important;
+}
+
+/* Hero content */
+.hero_content {
+  background-image: url('../img/slider-1-bg.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.hero_content h2 {
+  font-weight: 100;
+}
+
+.date_conference {
+  border-top: 2px solid white;
+}
+
+
+.hero_content button {
+  font-weight: 500;
+  font-size: 11px;
+  color: white;
+  background-color: #F72B0C;
 }

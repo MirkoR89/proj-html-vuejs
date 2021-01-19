@@ -1,1 +1,35 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
 
+/* Header */
+/* Navbar */
+.logo {
+  font-weight: 700;
+  font-size: 25px!important;
+  color: #272727!important;
+  margin-right: 6rem!important;
+
+}
+
+.navbar_link {
+  font-weight: 500;
+  font-size: 12px!important;
+  color: #C6C1BD!important;
+}
+
+.navbar_link:hover {
+  color: #F72B0C!important;
+  border-bottom: 2px solid #F72B0C;
+}
+
+form span i {
+  color: #C6C1BD;
+  border-left: 2px solid #C6C1BD;
+}
+
+.navbar_search {
+  border: none!important;
+  width: 30px!important;
+  height: 20px!important;
+}

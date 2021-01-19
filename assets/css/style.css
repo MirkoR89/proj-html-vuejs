@@ -1,5 +1,7 @@
+/* Utility classes */
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
 }
 
 /* Header */
@@ -10,7 +12,7 @@
 }
 
 .navbar_link {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 12px!important;
   color: #C6C1BD!important;
 }
@@ -39,17 +41,35 @@ form span i {
 }
 
 .hero_content h2 {
-  font-weight: 100;
+  font-weight: 200;
+}
+
+.hero_content h1 {
+  font-weight: 800;
+  font-size: 50px;
 }
 
 .date_conference {
+  font-weight: 700;
+  font-size: 11px;
   border-top: 2px solid white;
 }
 
-
 .hero_content button {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 11px;
   color: white;
   background-color: #F72B0C;
+}
+
+/* Main */
+/* W Section */
+.card-body i,
+.card-body p {
+  font-size: 14px;
+  color: #C6C1BD;
+}
+
+.card-body a {
+  color: #F72B0C;
 }

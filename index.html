@@ -14,7 +14,7 @@
   <script src="https://kit.fontawesome.com/8d58ee31c8.js" crossorigin="anonymous"></script>
   <!-- Google Fonts CDN -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <!-- Header -->
     <header>
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg container">
+      <nav class="navbar navbar-expand-lg py-3 container">
         <a class="navbar-brand logo" href="#"><img src="assets/img/logo.png" alt="Logo Keynote"></a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul v-for='link in navBar' class="navbar-nav mx-auto">
@@ -44,13 +44,12 @@
         <div class="container d-flex flex-column justify-content-center align-items-center">
           <h2>CONFERENCE ON</h2>
           <h1 class="pb-2">SOCIAL NETWORKS</h1>
-          <div class="date_conference py-2 mb-3">
-            <span> date /</span>
-            <span>place /</span>
-            <span>speakers</span>
+          <div v-for='conference in conferences' class="date_conference text-uppercase py-2 mb-3">
+            <span>{{conference.date}} /</span>
+            <span>{{conference.place}} /</span>
+            <span>{{conference.speakers}}</span>
           </div>
-          <button type="button" class="btn">REGISTER ONLINE</button>
-
+          <button type="button" class="btn py-3">REGISTER ONLINE</button>
         </div>
       </div>
     </header>
@@ -58,8 +57,17 @@
     <!-- Main -->
     <main>
       <!-- W section -->
-      <section>
-
+      <section class="container d-flex justify-content-between">
+        <div v-for='w in wSection' class="card border-0" style="width: 18rem;">
+          <div class="card-body">
+            <div class="d-flex">
+              <span><i :class="w.icon"></i></span>
+              <h5 class="card-title text-uppercase ml-2">{{w.title}}</h5>
+            </div>
+            <p class="card-text">{{w.paragraph}}</p>
+            <a href="#" class="font-italic">Learn More</a>
+          </div>
+        </div>
       </section>
 
       <!-- Timer section -->

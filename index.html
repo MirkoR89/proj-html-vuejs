@@ -87,13 +87,22 @@
       </section>
 
       <!-- Speakers section -->
-      <section class="speaker d-flex justify-content-between">
-        <div v-for='speaker in speakers' class="card" style="width: 18rem;">
-          <img :src=`assets/img/${speaker.profileImg}.jpg` class="card-img-top" alt="Speaker's profile image">
-          <div class="card-body">
-            <span>{{speaker.name}}</span>
-            <span>{{speaker.role}}</span>
+      <section class="speaker d-flex flex-column">
+        <div class="d-flex justify-content-between">
+          <h3>SPEAKER</h3>
+          <div class="arrow_bt">
+            <button class="arrow_left" type="button" name="button"><i class="fas fa-chevron-left"></i></button>
+            <button class="arrow_right" type="button" name="button"><i class="fas fa-chevron-right"></i></button>
           </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div v-for='speaker in speakers' class="card border-0 mx-2" style="width: 18rem;">
+            <img :src=`assets/img/${speaker.profileImg}.jpg` class="card-img-top" alt="Speaker's profile image">
+            <div class="card-body">
+              <span>{{speaker.name}}</span>
+              <span>{{speaker.role}}</span>
+            </div>
+        </div>
       </section>
 
       <!-- Program section -->

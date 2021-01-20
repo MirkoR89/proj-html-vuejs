@@ -55,6 +55,7 @@ new Vue({
         speakers: '9 speakers'
       }
     ],
+    countDown: null,
     //Counter to authoslide the conferences
     counterConference: 0,
     // data obj: W section
@@ -135,7 +136,13 @@ new Vue({
       if (this.counterConference > this.conferences.length -1) {
         this.counterConference = 0 ;
       }
-
+    },
+    //Function to countdown
+    countDownCalc() {
+      const newConferenceDate = new Date('21/04/2022 09:00:00');
+      const now = dayjs().format('DD/MM/YYYY hh:mm:ss');
+      let newCountDown = this.newConferenceDate - this.now;
+      this.newCountDown.pushthis(this.countDown)
     },
     //Function to Carosual Speaker
     prevSpeaker() {

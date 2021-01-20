@@ -80,7 +80,9 @@ form span i {
 
 /* Timer section */
 .timer {
+  height: 400px;
   background-image: url('../img/coutdown-bg1.jpg');
+
 }
 
 .timer p {
@@ -103,4 +105,28 @@ form span i {
   font-size: 11px;
   border: none;
   border-bottom: 2px solid #8d1402;
+}
+
+/* Speakers section */
+.carosual_speakers,
+.carosual_speakers .card {
+  background-color: #F7F7F7;
+}
+.carosual_speakers h3 {
+  font-weight: 700;
+}
+
+.arrow_bt .arrow_left,
+.arrow_bt .arrow_right {
+ background-color: #F72B0C;
+ color: white;
+}
+
+.card-body span:first-child {
+  font-weight: 700;
+}
+
+.card-body span:last-child {
+  font-size: 12px;
+  color: #868686!important;
 }

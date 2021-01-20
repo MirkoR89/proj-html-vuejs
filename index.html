@@ -87,8 +87,13 @@
       </section>
 
       <!-- Speakers section -->
-      <section>
-
+      <section class="speaker d-flex justify-content-between">
+        <div v-for='speaker in speakers' class="card" style="width: 18rem;">
+          <img :src=`assets/img/${speaker.profileImg}.jpg` class="card-img-top" alt="Speaker's profile image">
+          <div class="card-body">
+            <span>{{speaker.name}}</span>
+            <span>{{speaker.role}}</span>
+          </div>
       </section>
 
       <!-- Program section -->

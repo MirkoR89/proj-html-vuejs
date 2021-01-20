@@ -4,7 +4,8 @@ new Vue({
   el: '#root',
   data: {
     // data obj: Navbar.
-    navBar: [{
+    navBar: [
+      {
         name: 'home',
         link: null
       },
@@ -34,7 +35,8 @@ new Vue({
       }
     ],
     // data obj: Conferences
-    conferences: [{
+    conferences: [
+      {
         date: '23-26 may 2021',
         place: 'san francisco',
         speakers: '8 speakers'
@@ -51,7 +53,8 @@ new Vue({
       }
     ],
     // data obj: W section
-    wSection: [{
+    wSection: [
+      {
         icon: 'fas fa-trophy',
         title: 'who we are',
         paragraph: 'Donec id elit non mi porta gravida at eget me tus. Sed posuere consectetur estat lobo rtis. Cum sociis natoque.'
@@ -68,7 +71,48 @@ new Vue({
       }
     ],
     // data obj: Speakers section
-    speakers: [],
+    speakers: [
+      {
+        profileImg:'speaker-1',
+        name: 'jonathan elves',
+        role: "Twitter's Co-Founder"
+      },
+      {
+        profileImg:'speaker-2',
+        name: 'matthew white',
+        rolo: "Facebook's Co-Founder"
+      },
+      {
+        profileImg:'speaker-3',
+        name: 'angelina holy',
+        role: "Maxii's Manager"
+      },
+      {
+        profileImg:'speaker-4',
+        name: 'michael dover',
+        role: "Starbuck's CEO"
+      },
+      {
+        profileImg:'speaker-5',
+        name: 'Janet Jones',
+        role: "Newyork Post's GM"
+      },
+      {
+        profileImg:'speaker-6',
+        name: 'patric spancer',
+        role: "S&P Analyzer"
+      },
+      {
+        profileImg:'speaker-7',
+        name: 'jhon super doe',
+        role: "Yahoo's HR"
+      },
+      {
+        profileImg:'speaker-8',
+        name: 'laurence francis',
+        role: "Google's UI Designer"
+      }
+    ],
     // data obj: Recent news
     recentNews: [],
     // data obj: Tickets

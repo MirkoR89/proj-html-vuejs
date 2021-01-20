@@ -75,7 +75,7 @@
         <div class="timer">
           <div class="container d-flex flex-column justify-content-center align-items-center">
             <div class="countdown">
-              {{countDown}}  
+
             </div>
             <p>SUBSCRIBE FOR UPDATES</p>
             <form class="" action="index.html" method="post">
@@ -106,12 +106,24 @@
                 <span class="font-italic">{{speakers[counterSpeaker].role}}</span>
               </div>
             </div>
-        </div>
+          </div>
       </section>
 
       <!-- Program section -->
-      <section>
-
+      <section class="container">
+        <div class="program_title mt-4 d-flex justify-content-between align-items-center">
+          <h3 class="mr-3">PROGRAM</h3>
+          <p>This conference run through all 4 days from 23 - 26 May 2021. We also provide free lunch and coffee breack in each day.</p>
+          <span class="font-italic">View Full Program</span>
+        </div>
+        <div class="d-flex">
+          <div v-for='day in calendar' class="calendar">
+            <div class="days d-flex flex-column justify-content-center">
+              <span class="text-uppercase ml-4">{{day.day}}</span>
+              <span class="ml-4">{{day.date}}</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Maps section -->
@@ -153,7 +165,7 @@
 
   </div>
   <!-- DayJS CDN -->
-<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
   <!-- VueJs CDN -->
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
   <!-- Link file JS -->

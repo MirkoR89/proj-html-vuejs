@@ -4,6 +4,10 @@
   letter-spacing: 2px;
 }
 
+input {
+  outline: none;
+}
+
 /* Header */
 /* Navbar */
 .logo {
@@ -72,4 +76,31 @@ form span i {
 
 .card-body a {
   color: #F72B0C;
+}
+
+/* Timer section */
+.timer {
+  background-image: url('../img/coutdown-bg1.jpg');
+}
+
+.timer p {
+  font-weight: 700;
+  color: black;
+}
+
+.timer input {
+  width: 20rem;
+  height: 45px;
+  border: none;
+  padding: 0;
+}
+
+.timer button {
+  height: 45px;
+  background-color: #F72B0C;
+  color: white;
+  font-weight: 700;
+  font-size: 11px;
+  border: none;
+  border-bottom: 2px solid #8d1402;
 }

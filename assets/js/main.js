@@ -1,3 +1,5 @@
+// Check REDME.md file to see steps of every days
+
 new Vue({
   el: '#root',
   data: {

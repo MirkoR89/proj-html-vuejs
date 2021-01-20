@@ -44,10 +44,10 @@
         <div class="container d-flex flex-column justify-content-center align-items-center">
           <h2>CONFERENCE ON</h2>
           <h1 class="pb-2">SOCIAL NETWORKS</h1>
-          <div v-for='conference in conferences' class="date_conference text-uppercase py-2 mb-3">
-            <span>{{conference.date}} /</span>
-            <span>{{conference.place}} /</span>
-            <span>{{conference.speakers}}</span>
+          <div class="date_conference text-uppercase py-2 mb-3">
+            <span>{{conferences[counterConference].date}} /</span>
+            <span>{{conferences[counterConference].place}} /</span>
+            <span>{{conferences[counterConference].speakers}}</span>
           </div>
           <button type="button" class="btn py-3">REGISTER ONLINE</button>
         </div>
@@ -87,20 +87,20 @@
       </section>
 
       <!-- Speakers section -->
-      <section class="speaker d-flex flex-column">
+      <section class="carosual_speakers container d-flex flex-column">
         <div class="d-flex justify-content-between">
           <h3>SPEAKER</h3>
           <div class="arrow_bt">
-            <button class="arrow_left" type="button" name="button"><i class="fas fa-chevron-left"></i></button>
-            <button class="arrow_right" type="button" name="button"><i class="fas fa-chevron-right"></i></button>
+            <button @click='prevSpeaker' class="arrow_left" type="button" name="button"><i class="fas fa-chevron-left"></i></button>
+            <button @click='nextSpeaker' class="arrow_right" type="button" name="button"><i class="fas fa-chevron-right"></i></button>
           </div>
         </div>
-        <div class="d-flex justify-content-between">
-          <div v-for='speaker in speakers' class="card border-0 mx-2" style="width: 18rem;">
-            <img :src=`assets/img/${speaker.profileImg}.jpg` class="card-img-top" alt="Speaker's profile image">
-            <div class="card-body">
-              <span>{{speaker.name}}</span>
-              <span>{{speaker.role}}</span>
+        <div class="card_container d-flex justify-content-between">
+          <div class="card border-0 mx-2" style="width: 18rem;">
+            <img :src=`assets/img/${speakers[counterSpeaker].profileImg}.jpg` class="card-img-top" alt="Speaker's profile image">
+            <div class="card-body d-flex flex-column text-center">
+              <span>{{speakers[counterSpeaker].name}}</span>
+              <span>{{speakers[counterSpeaker].role}}</span>
             </div>
         </div>
       </section>

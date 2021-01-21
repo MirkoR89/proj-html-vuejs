@@ -1,5 +1,22 @@
 // Check REDME.md file to see steps of every days
 
+// Initialize and add the map
+function initMap() {
+  // The location of London
+  const london = { lat: 51.508, lng: -0.127 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: london,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: london,
+    map: map,
+  });
+}
+
+//VueJS initialization
 new Vue({
   el: '#root',
 

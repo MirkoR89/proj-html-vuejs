@@ -195,3 +195,9 @@ form span i {
 .conference_content img {
   width: 100px;
 }
+
+/* Maps section */
+#map {
+  height: 400px;
+  width: 100%;
+}

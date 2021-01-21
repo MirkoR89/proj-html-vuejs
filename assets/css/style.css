@@ -225,4 +225,9 @@ form span i {
 /* Footer */
 footer {
   background-color: #272727;
+  color: white;
+}
+
+.card_footer {
+  background-color: #272727;
 }

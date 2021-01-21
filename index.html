@@ -16,10 +16,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Google Maps CDN -->
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFXDI-y3h7FwnSlPDw1Jq1UZ36BJNuZtI&callback=initMap&libraries=&v=weekly"
-    defer
-  ></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFXDI-y3h7FwnSlPDw1Jq1UZ36BJNuZtI&callback=initMap&libraries=&v=weekly" defer></script>
+
 <body>
   <div id="root">
     <!-- Header -->
@@ -203,11 +201,23 @@
 
       <!-- Footer -->
       <footer>
-
+        <div class="container d-flex">
+          <div v-for='card in footer' class="card border-0" style="width: 18rem;">
+            <div class="card-body card_footer">
+              <h6 class="card-title text-uppercase">{{card.title}}</h6>
+              <p class="card-text">{{card.content}}</p>
+              <ul v-for='dot in card.list'>
+                <li></li>
+              </ul>
+              <div v-for='img in card.img' class="img_icons d-flex">
+                <span>x</span>
+                <!-- <img :src=`assets/img/pic_footer_${img.card.img}` alt=""> -->
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
     </main>
-
-
   </div>
   <!-- DayJS CDN -->
   <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>

@@ -1,21 +1,5 @@
 // Check REDME.md file to see steps of every days
 
-// Initialize and add the map
-function initMap() {
-  // The location of London
-  const london = { lat: 51.508, lng: -0.127 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
-    center: london,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: london,
-    map: map,
-  });
-}
-
 //VueJS initialization
 new Vue({
   el: '#root',
@@ -185,7 +169,26 @@ new Vue({
     // data obj: Sponsors
     sponsors: [],
     // data obj: footer
-    footer: []
+    footer: [
+      {
+        title: 'about us',
+        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        icon: ['fab fa-facebook-square', 'fab fa-twitter-square', 'fab fa-linkedin', 'fab fa-pinterest-square', 'fab fa-google-plus-square','fab fa-discord']
+      },
+      {
+        title: 'recent news',
+        list: ['Lorem ipsum dolor sit amet', 'consectetur adipisicing elit', 'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua', 'Ut enim ad minim veniam', 'quis nostrud exercitation ullamco laboris nisi ut']
+      },
+      {
+        title: 'get your seat',
+        content: "Book for your seat before it's too rate. We provide variety of ticket options",
+        html: '<button type="button" class="py-3">CHECK OUT TICKETS!</button>'
+      },
+      {
+        title: 'gallery from last years',
+        img: [1, 2, 3, 4, 5, 6, 7, 8]
+      }
+    ]
   },
 
   methods: {
@@ -213,3 +216,19 @@ new Vue({
     },
   }
 })
+
+// Initialize and add the map
+function initMap() {
+  // The location of London
+  const london = { lat: 51.508, lng: -0.127 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: london,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: london,
+    map: map,
+  });
+}

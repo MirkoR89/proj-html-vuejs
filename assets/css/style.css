@@ -11,18 +11,17 @@ input {
 /* Header */
 /* Navbar */
 .logo {
-  margin-right: 6rem!important;
-
+  margin-right: 6rem !important;
 }
 
 .navbar_link {
   font-weight: 700;
-  font-size: 12px!important;
-  color: #C6C1BD!important;
+  font-size: 12px !important;
+  color: #C6C1BD !important;
 }
 
 .navbar_link:hover {
-  color: #F72B0C!important;
+  color: #F72B0C !important;
   border-bottom: 2px solid #F72B0C;
 }
 
@@ -32,9 +31,9 @@ form span i {
 }
 
 .navbar_search {
-  border: none!important;
-  width: 30px!important;
-  height: 20px!important;
+  border: none !important;
+  width: 30px !important;
+  height: 20px !important;
 }
 
 /* Hero content */
@@ -82,7 +81,6 @@ form span i {
 .timer {
   height: 400px;
   background-image: url('../img/coutdown-bg1.jpg');
-
 }
 
 .timer p {
@@ -112,6 +110,7 @@ form span i {
 .carosual_speakers .card {
   background-color: #F7F7F7;
 }
+
 .carosual_speakers h3,
 .program_title h3 {
   font-weight: 700;
@@ -119,8 +118,8 @@ form span i {
 
 .arrow_bt .arrow_left,
 .arrow_bt .arrow_right {
- background-color: #F72B0C;
- color: white;
+  background-color: #F72B0C;
+  color: white;
 }
 
 .card-body span:first-child {
@@ -144,8 +143,9 @@ form span i {
   color: #F72B0C;
 }
 
+/* Calendar */
 .days {
-  width: 160px;
+  width: 222px;
   height: 50px;
   background-color: #F72B0C;
   border-right: 2px solid #8d1402;
@@ -156,7 +156,6 @@ form span i {
   background-color: #8d1402;
 }
 
-
 .days span:first-child {
   font-weight: 600;
   color: white;
@@ -166,5 +165,33 @@ form span i {
   font-weight: 300;
   font-size: 13px;
   color: white;
+}
 
+/* Conference details */
+.conference_details {
+  background-color: #F7F7F7;
+}
+
+.conference_info {
+  font-size: 11px;
+  color: #868686;
+}
+
+.conference_speaker {
+  width: 200px;
+  color: #F72B0C;
+}
+
+.conference_content h3 {
+  color: #353434;
+  font-weight: 500;
+}
+
+.conference_content p {
+  color: #868686;
+  font-weight: 400;
+}
+
+.conference_content img {
+  width: 100px;
 }

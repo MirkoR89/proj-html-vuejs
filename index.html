@@ -57,7 +57,7 @@
     <!-- Main -->
     <main>
       <!-- W section -->
-      <section class="container d-flex justify-content-between">
+      <section class="container d-flex justify-content-between mt-5">
         <div v-for='w in wSection' class="card border-0" style="width: 18rem;">
           <div class="card-body">
             <div class="d-flex">
@@ -72,7 +72,7 @@
 
       <!-- Timer section -->
       <section>
-        <div class="timer">
+        <div class="timer mt-5">
           <div class="container d-flex flex-column justify-content-center align-items-center">
             <div class="countdown">
 
@@ -88,7 +88,7 @@
 
       <!-- Speakers section -->
       <section class="carosual_speakers">
-        <div class="container d-flex flex-column pt-4">
+        <div class="container d-flex flex-column pt-5">
 
           <div class="d-flex justify-content-between align-items-center">
             <h3>SPEAKER</h3>
@@ -111,37 +111,40 @@
 
       <!-- Program section -->
       <section class="container">
-        <div class="program_title mt-4 d-flex justify-content-between align-items-center">
+        <div class="program_title mt-5 d-flex justify-content-between align-items-center">
           <h3 class="mr-3">PROGRAM</h3>
           <p>This conference run through all 4 days from 23 - 26 May 2021. We also provide free lunch and coffee breack in each day.</p>
           <span class="font-italic">View Full Program</span>
         </div>
+        <!-- Calendar -->
         <div class="d-flex mt-3">
-          <div v-for='day, index in calendar' @click='showConference(index)' class="calendar">
+          <div v-for='day in calendar' class="calendar">
             <div class="days d-flex flex-column justify-content-center">
               <span class="text-uppercase ml-4">{{day.day}}</span>
               <span class="ml-4">{{day.date}}</span>
             </div>
-            <div v-for='speaker, index in speakers' class="conference_details d-flex">
-              <div class="d-flex flex-column">
-                <div class="conference_time">
-                  <i class="far fa-clock"></i>
-                  <span>{{day.time}}</span>
-                </div>
-                <div class="conference_location">
-                  <i class="fas fa-location-arrow"></i>
-                  <span>{{day.location}}</span>
-                </div>
-                <div class="conference_speaker">
-                  <i class="fas fa-user"></i>
-                  <span>{{speaker.name}}</span>
-                </div>
-              </div>
-              <div class="d-flex flex-column">
-                <h3></h3>
-                <p></p>
-              </div>
+          </div>
+        </div>
+        <!-- Conference details -->
+        <div class="conference_details d-flex">
+          <div class="conference_info d-flex flex-column my-5 mx-4">
+            <div class="conference_time mb-2">
+              <i class="far fa-clock"></i>
+              <span>09:00 - 10:30</span>
             </div>
+            <div class="conference_location mb-2">
+              <i class="fas fa-location-arrow"></i>
+              <span>ROOM A</span>
+            </div>
+            <div class="conference_speaker">
+              <i class="fas fa-user"></i>
+              <span>LAURENCE FRANCIS</span>
+            </div>
+          </div>
+          <div class="conference_content d-flex flex-column my-5 mx-4">
+            <h3 class="mb-4">WELCOMING AND INTRODUCTION</h3>
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="assets/img/speaker-4.jpg" alt="">
           </div>
         </div>
       </section>

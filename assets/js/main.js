@@ -75,7 +75,8 @@ new Vue({
       }
     ],
     // data obj: Speakers section
-    speakers: [{
+    speakers: [
+      {
         profileImg: 'speaker-1',
         name: 'jonathan elves',
         role: "Twitter's Co-Founder"
@@ -118,7 +119,8 @@ new Vue({
     ],
     //Counter to move the slider-cards
     counterSpeaker: 0,
-    calendar: [{
+    calendar: [
+      {
         day: 'day 1',
         date: '23 May 2021',
         time: '9.00 - 10.30',
@@ -157,25 +159,8 @@ new Vue({
         location: 'room f',
         conferenceTitle: 'Welcoming and Introduction',
         conferenceContent: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      },
-      {
-        day: null,
-        date: null,
-        time: null,
-        location: null,
-        conferenceTitle: null,
-        conferenceContent: null
-      },
-      {
-        day: null,
-        date: null,
-        time: null,
-        location: null,
-        conferenceTitle: null,
-        conferenceContent: null
-      },
+      }
     ],
-    dayActive: 0,
     // data obj: Recent news
     recentNews: [],
     // data obj: Tickets

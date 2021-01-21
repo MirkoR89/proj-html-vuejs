@@ -145,10 +145,17 @@ form span i {
 }
 
 .days {
-  width: 150px;
+  width: 160px;
   height: 50px;
   background-color: #F72B0C;
+  border-right: 2px solid #8d1402;
 }
+
+.days:hover {
+  cursor: pointer;
+  background-color: #8d1402;
+}
+
 
 .days span:first-child {
   font-weight: 600;
@@ -159,4 +166,5 @@ form span i {
   font-weight: 300;
   font-size: 13px;
   color: white;
+
 }

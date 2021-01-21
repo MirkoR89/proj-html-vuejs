@@ -116,11 +116,31 @@
           <p>This conference run through all 4 days from 23 - 26 May 2021. We also provide free lunch and coffee breack in each day.</p>
           <span class="font-italic">View Full Program</span>
         </div>
-        <div class="d-flex">
-          <div v-for='day in calendar' class="calendar">
+        <div class="d-flex mt-3">
+          <div v-for='day, index in calendar' @click='showConference(index)' class="calendar">
             <div class="days d-flex flex-column justify-content-center">
               <span class="text-uppercase ml-4">{{day.day}}</span>
               <span class="ml-4">{{day.date}}</span>
+            </div>
+            <div v-for='speaker, index in speakers' class="conference_details d-flex">
+              <div class="d-flex flex-column">
+                <div class="conference_time">
+                  <i class="far fa-clock"></i>
+                  <span>{{day.time}}</span>
+                </div>
+                <div class="conference_location">
+                  <i class="fas fa-location-arrow"></i>
+                  <span>{{day.location}}</span>
+                </div>
+                <div class="conference_speaker">
+                  <i class="fas fa-user"></i>
+                  <span>{{speaker.name}}</span>
+                </div>
+              </div>
+              <div class="d-flex flex-column">
+                <h3></h3>
+                <p></p>
+              </div>
             </div>
           </div>
         </div>

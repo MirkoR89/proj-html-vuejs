@@ -172,8 +172,8 @@ new Vue({
     footer: [
       {
         title: 'about us',
-        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        icon: ['fab fa-facebook-square', 'fab fa-twitter-square', 'fab fa-linkedin', 'fab fa-pinterest-square', 'fab fa-google-plus-square','fab fa-discord']
+        content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        icons: ['fab fa-facebook-square', 'fab fa-twitter-square', 'fab fa-linkedin', 'fab fa-pinterest-square', 'fab fa-google-plus-square','fab fa-discord']
       },
       {
         title: 'recent news',

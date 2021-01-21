@@ -201,3 +201,28 @@ form span i {
   height: 400px;
   width: 100%;
 }
+/* Location section */
+.location_section {
+  background-image: url('../img/location-bg.jpg');
+  height: 300px;
+  color: white;
+}
+
+.location_contact {
+  border-top: 2px solid white;
+}
+
+.location_info h3,
+.location_info span:first-child {
+  font-weight: 700;
+}
+
+.location_info span:last-child {
+  font-weight: 300;
+  color: #F72B0C;
+}
+
+/* Footer */
+footer {
+  background-color: #272727;
+}
